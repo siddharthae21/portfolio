@@ -1,48 +1,73 @@
-import { motion } from "framer-motion";
-
 function Projects() {
   const projects = [
     {
-      title: "ShareNest",
-      description:
-        "Manage shared tasks, expenses & groceries among roommates. Built with React & Firebase.",
-      link: "https://github.com/yourusername/sharenest",
+      title: 'ShareNest',
+      description: 'A household management app with shared tasks, expenses, reminders, and document storage.',
+      tech: ['React', 'Tailwind CSS', 'Node.js'],
+      live: 'https://siddharthae.vercel.app',
+      code: 'https://github.com/siddharthae21/sharenest'
     },
     {
-      title: "Portfolio Website",
-      description: "My personal site built with Vite, React, and Tailwind CSS.",
-      link: "#",
+      title: 'Portfolio Website',
+      description: 'This very portfolio built using Vite, React, Tailwind, and framer-motion with glassmorphism UI.',
+      tech: ['React', 'Tailwind CSS', 'Framer Motion'],
+      live: 'https://siddharthae.vercel.app',
+      code: 'https://github.com/siddharthae21/portfolio'
     },
+    // {
+    //   title: 'Weather App',
+    //   description: 'Responsive weather forecast app using OpenWeatherMap API with clean UI.',
+    //   tech: ['React', 'Tailwind CSS', 'API'],
+    //   live: '#',
+    //   code: 'https://github.com/siddharthae21/weather-app'
+    // }
   ];
 
   return (
-    <section className="py-20 px-6 bg-gray-50" id="projects">
+    <section id="projects" className="py-20 px-6 bg-white dark:bg-black text-indigo-900 dark:text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
-          Projects
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
+              className="bg-white/40 dark:bg-white/10 rounded-xl p-6 shadow-lg backdrop-blur-md border border-white/20 hover:scale-105 transition-transform"
             >
-              <h3 className="text-2xl font-semibold text-primary mb-2">
+              <h3 className="text-2xl font-semibold mb-2 text-indigo-700 dark:text-indigo-300">
                 {project.title}
               </h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                className="text-indigo-500 font-medium hover:underline"
-              >
-                View Project →
-              </a>
-            </motion.div>
+              <p className="text-sm mb-4 text-indigo-900/80 dark:text-indigo-100/90">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tech.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1 text-xs rounded-full bg-indigo-100 dark:bg-indigo-800 text-indigo-700 dark:text-white"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex gap-4">
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-indigo-600 dark:text-indigo-300 underline hover:text-indigo-800"
+                >
+                  Live
+                </a>
+                <a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-indigo-600 dark:text-indigo-300 underline hover:text-indigo-800"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
           ))}
         </div>
       </div>

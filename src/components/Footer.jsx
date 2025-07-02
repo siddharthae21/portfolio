@@ -1,32 +1,35 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="bg-gray-100 py-6 text-center text-gray-600">
-      <div className="flex justify-center space-x-6 mb-2 text-xl">
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-primary"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://linkedin.com/in/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-primary"
-        >
-          <FaLinkedin />
-        </a>
+    <footer className="bg-white dark:bg-black text-indigo-900 dark:text-white py-6 px-4">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
+        <p className="text-sm">&copy; {new Date().getFullYear()} Siddhartha.E • Built with ❤️ using React &
+        Tailwind</p>
+        <div className="flex gap-4 text-lg">
+          <a
+            href="https://github.com/siddharthae21"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-indigo-500"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://linkedin.com/in/siddharthae21"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-indigo-500"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
       </div>
-      <p className="text-sm">
-        © {new Date().getFullYear()} Sid.Dev • Built with ❤️ using React &
-        Tailwind
-      </p>
     </footer>
   );
 }
 
 export default Footer;
+
