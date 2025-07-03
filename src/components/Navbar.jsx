@@ -15,12 +15,20 @@ function Navbar() {
        className="fixed top-0 w-full z-50 transition-all duration-300 bg-gradient-to-r from-white via-white to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 shadow-md border-b border-white/20 dark:border-gray-700"
     >
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a
-          href="#home"
-          className="text-2xl font-extrabold text-indigo-600 dark:text-indigo-200 tracking-wide"
-        >
-          Siddhartha E
-          <p className="text-xs text-black italic tracking-[0.20em] font-thin dark:text-white">Frontend Developer</p>
+        <a href="#home" className="flex items-center gap-2">
+          <img
+            src="/mylogo.png"
+            alt="Logo"
+            className="h-10 w-10 object-contain rounded-full"
+          />
+          <div>
+            <p className="text-2xl font-extrabold text-indigo-600 dark:text-indigo-200 tracking-wide">
+              Siddhartha E
+            </p>
+            <p className="text-xs text-black italic tracking-[0.20em] font-thin dark:text-white">
+              Frontend Developer
+            </p>
+          </div>
         </a>
         
 

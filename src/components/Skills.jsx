@@ -4,7 +4,7 @@ function Skills() {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-indigo-100 via-white to-purple-100 dark:bg-zinc-900 text-indigo-900 dark:text-white" id="skills">
+    <section className="py-20 px-6 bg-gradient-to-br from-indigo-100 via-white to-purple-50 dark:from-zinc-900 dark:via-black dark:to-zinc-800 text-indigo-900 dark:bg-zinc-900 text-indigo-900 dark:text-white" id="skills">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">Skills</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">

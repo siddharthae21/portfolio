@@ -26,7 +26,7 @@ function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6 text-indigo-900 dark:text-white bg-gradient-to-br from-indigo-100 via-white to-purple-100 dark:from-zinc-900 dark:via-black dark:to-zinc-800 text-indigo-900 dark:text-white relative overflow-hidden transition-colors duration-500">
+    <section id="experience" className="py-20 px-6 text-indigo-900 dark:text-white bg-gradient-to-br from-purple-50 via-white to-indigo-100 dark:from-zinc-900 dark:via-black dark:to-zinc-800 text-indigo-900 dark:text-white relative overflow-hidden transition-colors duration-500">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">Work Experience</h2>
         <div className="space-y-8">
