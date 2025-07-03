@@ -17,10 +17,12 @@ function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#home"
-          className="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400 tracking-wide"
+          className="text-2xl font-extrabold text-indigo-600 dark:text-indigo-200 tracking-wide"
         >
           Siddhartha E
+          <p className="text-xs text-black italic tracking-[0.20em] font-thin dark:text-white">Frontend Developer</p>
         </a>
+        
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 font-semibold">

@@ -9,8 +9,8 @@ function Projects() {
     },
     {
       title: 'Portfolio Website',
-      description: 'This very portfolio built using Vite, React, Tailwind, and framer-motion with glassmorphism UI.',
-      tech: ['React', 'Tailwind CSS', 'Framer Motion'],
+      description: 'This is a portfolio built using Vite, React and Tailwind with glassmorphism UI.',
+      tech: ['React', 'Vite','Tailwind CSS', 'JavaScript'],
       live: 'https://siddharthae.vercel.app',
       code: 'https://github.com/siddharthae21/portfolio'
     },

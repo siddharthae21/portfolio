@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 
 const roles = [
-  'Frontend Developer',
-  'React Developer',
-  'Web Developer',
-  'Creator'
+  'Siddhartha',
+  'a Frontend Developer',
+  'a React Developer',
+  'a Web Developer',
+  'a Creator'
 ];
 
 function Hero() {
@@ -43,13 +44,14 @@ function Hero() {
         <div className="absolute top-10 right-1/3 w-40 h-40 bg-pink-200 dark:bg-pink-600 rounded-full blur-[80px] opacity-20 animate-float-fast" />
       </div>
 
-      <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">
-        Hi, I’m <span className="text-indigo-600 dark:text-indigo-400">Siddhartha</span>
+      <h1 className="relative z-10 text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 min-h-[60px]">
+        Hi, I’m <span className="text-indigo-600 dark:text-indigo-400">{text}</span>
+        <span className="animate-pulse"></span>
       </h1>
-      <h2 className="relative z-10 text-xl sm:text-2xl md:text-3xl font-medium mb-6 min-h-[40px]">
+      {/* <h2 className="relative z-10 text-xl sm:text-2xl md:text-3xl font-medium mb-6 min-h-[40px]">
         {text}
         <span className="animate-pulse">_</span>
-      </h2>
+      </h2> */}
       <p className="relative z-10 max-w-xl text-lg text-indigo-800 dark:text-indigo-200">
         I craft beautiful, responsive interfaces with a focus on performance, user experience, and modern design aesthetics.
       </p>

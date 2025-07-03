@@ -4,7 +4,7 @@ function About() {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">About Me</h2>
         <p className="text-lg leading-relaxed">
-          I'm a passionate frontend developer with expertise in React, Tailwind CSS, and building responsive, accessible web applications.
+          I'm a passionate frontend developer with expertise in React Js, Tailwind CSS, and building responsive, accessible web applications.
         </p>
       </div>
     </section>
